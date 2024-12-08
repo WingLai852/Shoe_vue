@@ -33,8 +33,14 @@
   
   <script>
   import axios from 'axios';
+  import OrderCounter from '@/components/OrderCounter.vue';
+
+
   
   export default {
+    components: {
+    OrderCounter,
+  },
     name: 'Dashboard',
     data() {
       return {

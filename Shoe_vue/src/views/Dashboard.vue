@@ -76,40 +76,41 @@
   };
   </script>
   
-  <style scoped>
-  .dashboard {
+<style scoped>
+.dashboard {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-  }
-  
-  h1, h2 {
+}
+
+h1, h2 {
     text-align: center;
-  }
-  
-  table {
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-  }
-  
-  th, td {
+}
+
+th, td {
     padding: 10px;
     border: 1px solid #ddd;
     text-align: center;
-  }
-  
-  button {
+}
+
+button {
     padding: 5px 10px;
-    background-color: #dc3545;
-    color: white;
+    background-color: #39ff14; /* Neon green */
+    color: black;
     border: none;
     cursor: pointer;
     border-radius: 5px;
-  }
-  
-  button:hover {
-    background-color: #c82333;
-  }
-  </style>
+}
+
+button:hover {
+    background-color: #32cd32; /* Slightly darker neon green */
+}
+</style>
+
   

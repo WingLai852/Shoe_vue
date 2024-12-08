@@ -32,7 +32,7 @@
     methods: {
       async handleLogin() {
         try {
-          const response = await axios.post('http://localhost:3000/api/v1/login', {
+          const response = await axios.post('http://localhost:3000/api/v1/auth/login', {
             username: this.username,
             password: this.password,
           });
@@ -50,54 +50,59 @@
   </script>
   
   <style scoped>
-  .login {
+.login {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
+    background-color: #000;
+    border: 1px solid #00ff00;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
+    box-shadow: 0 2px 4px rgba(0, 255, 0, 0.1);
+}
+
+h1 {
     text-align: center;
-  }
-  
-  .form-group {
+    color: #00ff00;
+}
+
+.form-group {
     margin-bottom: 15px;
-  }
-  
-  label {
+}
+
+label {
     display: block;
     margin-bottom: 5px;
-  }
-  
-  input {
+    color: #00ff00;
+}
+
+input {
     width: 100%;
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #00ff00;
     border-radius: 5px;
-  }
-  
-  button {
+    background-color: #000;
+    color: #00ff00;
+    box-sizing: border-box; /* Add this line to fix input field */
+}
+
+button {
     width: 100%;
     padding: 10px;
-    background-color: #007bff;
-    color: white;
+    background-color: #00ff00;
+    color: #000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  .error {
+}
+
+button:hover {
+    background-color: #00cc00;
+}
+
+.error {
     color: red;
     margin-top: 10px;
     text-align: center;
-  }
+}
   </style>
   

@@ -22,16 +22,19 @@ export default {
 nav {
   display: flex;
   gap: 10px;
-  background-color: #333;
+  background-color: black;
   padding: 10px;
 }
 
 nav a {
-  color: white;
+  color: neon green;
   text-decoration: none;
+  font-weight: bold;
 }
 
 nav a:hover {
   text-decoration: underline;
+  color: white;
 }
 </style>
+
